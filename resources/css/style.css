@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: inherit!important;
+}
+a:hover {
+    text-decoration: none;
+    color:inherit!important;
+}
+
+.main {
+    background-color: #F9F9F9!important;
+}
+
+.app-header {
+    border-bottom: none!important;
+    box-shadow: 1px 1px 1px #f9f9f9;
+}
+.sidebar {
+    background-color: #ffffff!important;
+}
+
+.sidebar .nav-link {
+    padding: 10px 1px 10px 20px !important;
+    color: #666666!important;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #fa6484!important;
+    color: #ffffff!important;
+}
+
+.sidebar .active {
+    background-color: #7E57C2!important;
+}
+
+.sidebar .active:hover,
+.sidebar .active:hover i {
+    color: #fff!important;
+}
+
+.sidebar .active:hover .icon-i {
+    color: #fff!important;
+}
+
+.sidebar .nav-link:hover i {
+    color: #666666!important;
+}
