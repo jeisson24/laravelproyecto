@@ -4,12 +4,12 @@
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <i class="nav-icon icon-speedometer"></i> Escritorio
+             Escritorio
               </a>
             </li>  
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <i class="nav-icon icon-speedometer"></i> Sedes
+                 Cursos
               </a>
             </li>        
           </ul>

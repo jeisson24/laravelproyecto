@@ -22,8 +22,8 @@
           </a>
         </li>
         <li class="nav-item dropdown mr-4">
-          <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          {{ Auth::user()->name }}
+          <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+           <span class="d-md-down-none">{{ Auth::user()->name }}</span>
         </a>
           <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-header text-center">
