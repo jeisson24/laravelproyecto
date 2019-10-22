@@ -3,7 +3,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">
-         GLSP    
+         Cur505    
       </a>
       <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-              <i class="fa fa-bell-o"></i> Cerrar sesión
+              <i class="fas fa-power-off"></i> Cerrar sesión
             </a>
             </div>
         </li>

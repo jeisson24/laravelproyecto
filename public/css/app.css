@@ -1,6 +1,9 @@
 a {
     text-decoration: none;
-    color: inherit!important;
+    color:inherit!important;
+}
+.link{
+    color:#fa6484!important;
 }
 a:hover {
     text-decoration: none;
@@ -17,6 +20,7 @@ a:hover {
 }
 .sidebar {
     background-color: #ffffff!important;
+    border-right: 1px solid #f1f0f0;;
 }
 
 .sidebar .nav-link {
@@ -44,6 +48,14 @@ a:hover {
 
 .sidebar .nav-link:hover i {
     color: #666666!important;
+}
+
+footer {
+    background-color: #FFFFFF!important;
+    border-top: 1px solid #f1f0f0 !important;
+}
+.breadcrumb{
+    border-bottom: 1px solid #f1f0f0!important;
 }
 @charset "UTF-8";/*!
  * CoreUI Icons - Open Source Icons

@@ -6,7 +6,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item">Escritorio</li>
           <li class="breadcrumb-item">
-            <a href="#">Administrador</a>
+            <a href="#" class="link">Administrador</a>
           </li>
           <li class="breadcrumb-item active">Sedes</li>
          
