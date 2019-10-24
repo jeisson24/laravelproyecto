@@ -16,19 +16,24 @@
           <div class="animated fadeIn">
                <div class="row">
                    <div class="col-md-12">
-                       
-                         <table class="table table-hover">
+                         <button class="btn btn-secondary">Nuevo pais</button>
+                         <br><br>
+                         <table class="table table-hover table-sm">
                              <tr class="bg-secondary">
                                  <th>ID</th>
                                  <th>PAIS</th>
+                                 <th>CREACIÓN</th>
+                                 <th>ACTUALIZACION</th>
                                  <th>OPCIONES</th>
                              </tr>
                              @foreach($paises as $pais)
                               <tr>
                                   <td>{{ $pais->id_pais }} </td>
                                   <td>{{ $pais->pais }} </td>
+                                  <td>{{ $pais->created_at }} </td>
+                                  <td>{{ $pais->updated_at }} </td>
                                   <td> 
-                                       <a href="" class="btn btn-warning btn-sm">Editar</a>    
+                                       <a href="" class="btn btn-link btn-sm">Editar</a>    
                                   </td>
                               </tr>
                               @endforeach
