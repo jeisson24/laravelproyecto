@@ -34,7 +34,8 @@ a:hover {
 }
 
 .sidebar .active {
-    background-color: #7E57C2!important;
+    background-color: #fa6484!important;
+    color: #FFFFFF!important;
 }
 
 .sidebar .active:hover,

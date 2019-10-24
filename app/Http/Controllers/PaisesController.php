@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Pais;
 use Illuminate\Http\Request;
 
 class PaisesController extends Controller
@@ -13,7 +13,8 @@ class PaisesController extends Controller
      */
     public function index()
     {
-        //
+        $paises= Pais::all();
+        return view('pais.index',compact('paises'));
     }
 
     /**
