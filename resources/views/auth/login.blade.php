@@ -13,7 +13,7 @@
     <!-- Styles Laravel Mix -->
     <link rel="stylesheet" href="{{ url('css/app.css') }}">
   </head>
-  <body style="background-image: url('{{ url('img/bg_login.jpg') }}');width:100%;height:100%;background-size:cover;background-repeat:no-repeat;min-height:100%;background-attachment: fixed;" >
+  <body style="background-image: url('{{ url('img/bg_login.jpg') }}');width:100%;height:100%;background-size:cover;background-repeat:no-repeat;min-height:100%;background-attachment: fixed;    " >
     <br>
 <div class="container">
     <br>

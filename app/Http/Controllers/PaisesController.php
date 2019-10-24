@@ -35,7 +35,8 @@ class PaisesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Pais::create($request->all());
+        return redirect()->route('paises.index');
     }
 
     /**
