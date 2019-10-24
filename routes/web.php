@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('paises','PaisesController');
+Route::resource('categorias','categoriaController');
+Route::resource('cursos','cursoController');
+Route::resource('contenidos','contenidoController');
+Route::resource('capitulos','capituloController');

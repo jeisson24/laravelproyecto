@@ -1,4 +1,4 @@
-a {
+/*a {
     text-decoration: none;
     color:inherit!important;
 }
@@ -23,10 +23,7 @@ a:hover {
     border-right: 1px solid #f1f0f0;;
 }
 
-.sidebar .nav-link {
-    padding: 6px 1px 6px 14px !important;
-    color: #666666!important;
-}
+
 
 .sidebar .nav-link:hover {
     background-color: #fa6484!important;
@@ -57,4 +54,7 @@ footer {
 }
 .breadcrumb{
     border-bottom: 1px solid #f1f0f0!important;
+}*/
+.sidebar .nav-link {
+    padding: 6px 1px 6px 14px !important;
 }
