@@ -16,10 +16,10 @@ class CreateCapituloTable extends Migration
         Schema::create('capitulo', function (Blueprint $table) {
             $table->increments('id_capitulo');
             $table->integer('fk_contenido')->unsigned();
-            $table->string('nombre',75);
+            $table->string('nombre_capitulo',75);
             $table->text('descripcion');
             $table->string('url_video',200);
-            $table->foreign('fk_contenido')->references('id_contenido')->on('contenido');
+           // $table->foreign('fk_contenido')->references('id_contenido')->on('contenido');
             $table->timestamps();
         });
     }

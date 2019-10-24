@@ -16,8 +16,8 @@ class CreateContenidoTable extends Migration
         Schema::create('contenido', function (Blueprint $table) {
             $table->increments('id_contenido');
             $table->integer('fk_curso')->unsigned();
-            $table->string('nombre',75);
-            $table->foreign('fk_curso')->references('id_curso')->on('curso');
+            $table->string('nombre_contenido',75);
+            //$table->foreign('fk_curso')->references('id_curso')->on('curso');
             $table->timestamps();
         });
     }

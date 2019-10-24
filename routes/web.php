@@ -18,8 +18,20 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+/*Route Pais */
 Route::resource('paises','PaisesController');
+
+
+/* Route Categoria */
 Route::resource('categorias','categoriaController');
-Route::resource('cursos','cursoController');
+
+/* Route Contenido */
 Route::resource('contenidos','contenidoController');
+
+
+/* Route Capitulo */
 Route::resource('capitulos','capituloController');
+
+
+/** Route Curso */
+Route::resource('cursos','cursoController');

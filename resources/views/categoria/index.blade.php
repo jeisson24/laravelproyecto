@@ -17,17 +17,26 @@
                <div class="row">
                    <div class="col-md-12">
                      
-                         <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Nuevo pais</button><br>
+                         <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Nueva categoria</button><br>
                          <code>Falta programar editar</code>
                          <br><br>
                          <table class="table table-hover table-sm">
                              <tr class="bg-secondary">
                                  <th>ID</th>
-                                 <th>PAIS</th>
+                                 <th>CATEGORIA</th>
                                  <th>CREACIÓN</th>
                                  <th>ACTUALIZACION</th>
                                  <th>OPCIONES</th>
                              </tr>
+                             @foreach($categorias as $categoria)
+                             <tr>
+                                 <td>{{ $categoria->id_categoria}}</td>
+                                 <td>{{ $categoria->categoria}}</td>
+                                 <td>{{ $categoria->created_at}}</td>
+                                 <td>{{ $categoria->updated_at}}</td>
+                                 <td>OPCIONES</td>
+                             </tr>
+                             @endforeach
                             
                          </table>
                    </div>
@@ -46,7 +55,14 @@
         </button>
       </div>
       <div class="modal-body">
-           
+      <form action="{{ route('categorias.store')}}" method="post">
+             @csrf 
+                <div class="form-group">
+                  <label for="">Categoria</label>
+                  <input type="text" class="form-control" name="categoria">
+                </div>
+                <button class="btn btn-primary" type="submit">Crear</button>
+           </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

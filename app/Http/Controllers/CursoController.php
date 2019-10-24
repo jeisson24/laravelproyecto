@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Curso;
+use App\Contenido;
 use Illuminate\Http\Request;
 
 class CursoController extends Controller
@@ -13,7 +14,9 @@ class CursoController extends Controller
      */
     public function index()
     {
-        return view('curso.index');
+        
+        $cursos=Curso::select('curso.nombre_curso','curso.id_curso','categoria.categoria')->join('categoria','categoria.id_categoria','=','curso.fk_categoria')->get();
+        return view('curso.index',compact('cursos'));
 
     }
 

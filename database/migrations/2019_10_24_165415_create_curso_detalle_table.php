@@ -17,7 +17,7 @@ class CreateCursoDetalleTable extends Migration
             $table->increments('id_curso_detalle');
             $table->integer('fk_curso')->unsigned();
             $table->text('requisitos');
-            $table->foreign('fk_curso')->references('id_curso')->on('curso');
+            //$table->foreign('fk_curso')->references('id_curso')->on('curso');
             $table->timestamps();
         });
     }

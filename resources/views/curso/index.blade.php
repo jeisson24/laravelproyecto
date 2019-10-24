@@ -1,6 +1,10 @@
 @extends('../layouts.app')
 
 @section('contenido')
+<?php 
+use App\Contenido;
+
+?>
 <main class="main">
         <!-- Breadcrumb-->
         <ol class="breadcrumb">
@@ -9,7 +13,7 @@
           <li class="breadcrumb-item">
             <a href="#" class="link">Administrador</a>
           </li>
-          <li class="breadcrumb-item active">Paises registrados</li>
+          <li class="breadcrumb-item active">Cursos registrados</li>
          
         </ol>
         <div class="container-fluid">
@@ -23,11 +27,31 @@
                          <table class="table table-hover table-sm">
                              <tr class="bg-secondary">
                                  <th>ID</th>
-                                 <th>PAIS</th>
-                                 <th>CREACIÓN</th>
-                                 <th>ACTUALIZACION</th>
+                                 <th>NOMBRE DEL CURSO</th>
+                                 <th>CATEGORIA</th>
+                                 <th>CONTENIDO</th>
+                                 <th>CAPITULOS</th>
                                  <th>OPCIONES</th>
                              </tr>
+                             @foreach($cursos as $curso)
+                             <tr>
+                                 <td>{{ $curso->id_curso }}</td>
+                                 <td>{{ $curso->nombre_curso }}</td>
+                                 <td>{{ $curso->categoria }}</td>
+                                 <td>
+
+                                  <?php 
+                                    $countContenido = Contenido::where('fk_curso', '=', $curso->id_curso)->get();
+                                   echo  $wordCount = $countContenido->count();
+                                  ?>
+
+                                 </td>
+                                 <td>CAPITULOS</td>
+                                 <td>
+                                   <a href="">Detalles</a>
+                                 </td>
+                             </tr>
+                             @endforeach
                             
                          </table>
                    </div>
