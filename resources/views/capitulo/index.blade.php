@@ -89,6 +89,27 @@
 </div>
 </div>
 
+
+<div class="form-group">
+<label class="col-md-5 control-label" >Serial Equipo</label> 
+<div class="col-md-5 inputGroupContainer">
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input name="serial" placeholder="Ingrese serial" class="form-control"  type="text">
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-5 control-label" >Marca Equipo </label> 
+<div class="col-md-5 inputGroupContainer">
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input name="marca" placeholder="Marca Equipo en mayuscula" class="form-control"  type="text">
+</div>
+</div>
+</div>
+
 <div class="form-group"> 
 <label class="col-md-5 control-label">Sede</label>
 <div class="col-md-5 selectContainer">

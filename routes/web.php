@@ -35,3 +35,6 @@ Route::resource('capitulos','capituloController');
 
 /** Route Curso */
 Route::resource('cursos','cursoController');
+
+/** Route ingreso aprendiz */
+Route::resource('ingreso','ingreso_apreController');

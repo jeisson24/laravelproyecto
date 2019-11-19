@@ -33,6 +33,10 @@
                         <a class="nav-link" href="{{ route('capitulos.index') }}">
                         <i class="nav-icon icon-puzzle"></i> Capitulos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('capitulos.index') }}">
+                        <i class="nav-icon icon-puzzle"></i> aprendiz</a>
+                    </li>
     
                    </ul>
              </li>       
